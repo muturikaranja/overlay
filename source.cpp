@@ -90,6 +90,7 @@ int main()
 	}
 
 	/*
+		If we exit the process, our callbacks will be deleted too..
 		ExitThread() exits the thread only, not the process.
 		On Windows, Microsoft's CRT exits the process once main() returns.
 		In other words, if you simply return 0 within main(), you'll exit the process.
